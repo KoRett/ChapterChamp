@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="dutch_white">#F5DFBB</color>
+    <color name="peach_orange">#EFCC95</color>
+    <color name="cafe_au_lait">#A37C61</color>
+    <color name="deep_coffee">#68453B</color>
+    <color name="beaver">#A68674</color>
+</resources>

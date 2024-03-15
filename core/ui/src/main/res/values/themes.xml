@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.ChapterChamp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dutch_white</item>
+        <item name="colorOnSecondary">@color/peach_orange</item>
+        <item name="colorOnSecondaryContainer">@color/peach_orange</item>
+        <item name="colorOnSurface">@color/dutch_white</item>
+        <item name="colorOnSurfaceVariant">@color/cafe_au_lait</item>
+        <item name="colorSurfaceContainer">@color/deep_coffee</item>
+        <item name="colorSecondaryContainer">@color/beaver</item>
+        <item name="colorSurface">@color/deep_coffee</item>
+        <item name="colorPrimaryDark">@color/deep_coffee</item>
+
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+
+    </style>
+
+    <style name="Theme.ChapterChamp" parent="Base.Theme.ChapterChamp" />
+
+</resources>
