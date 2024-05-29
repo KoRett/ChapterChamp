@@ -17,6 +17,7 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 apply("com.android.application")
                 apply("org.jetbrains.kotlin.android")
                 apply("chapterchamp.android.dagger")
+                apply("androidx.navigation.safeargs.kotlin")
             }
 
             extensions.configure<BaseAppModuleExtension> {
@@ -61,6 +62,8 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             dependencies {
                 "implementation"(project(":core:data"))
                 "implementation"(project(":core:ui"))
+                "implementation"(libs.findLibrary("coroutines.core").get())
+                "implementation"(libs.findLibrary("coroutines.android").get())
             }
         }
     }

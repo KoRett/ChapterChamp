@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="favourite">Избранное</string>
+    <string name="error_image">Error image</string>
+    <string name="data_loading_error_exclamation_mark">Ошибка загрузки данных!</string>
+    <string name="refresh">Обновить</string>
+    <string name="favourite_book">Favourite book</string>
 </resources>

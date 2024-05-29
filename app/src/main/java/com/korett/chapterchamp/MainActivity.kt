@@ -1,17 +1,15 @@
 package com.korett.chapterchamp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import androidx.activity.enableEdgeToEdge
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.navigation.NavHostController
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.korett.chapterchamp.app.App
 import com.korett.chapterchamp.databinding.ActivityMainBinding
+import com.korett.domain.repository.SettingsRepository
+import com.korett.model.ThemeModel
+import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 

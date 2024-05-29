@@ -1,7 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.ChapterChamp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/beaver_dark</item>
+        <item name="colorOnSecondary">@color/coyote</item>
+        <item name="colorOnSecondaryContainer">@color/coyote</item>
+        <item name="colorOnSurface">@color/beaver_dark</item>
+        <item name="colorOnSurfaceVariant">@color/umber_dark</item>
+        <item name="colorSurfaceContainer">@color/bistre</item>
+        <item name="colorSecondaryContainer">@color/umber_light</item>
+        <item name="colorSurface">@color/bistre</item>
+        <item name="colorPrimaryDark">@color/bistre</item>
+
+        <item name="android:textColorPrimary">@color/umber_dark</item>
+        <item name="android:textColorSecondary">@color/umber_dark</item>
+        <item name="actionMenuTextColor">@color/umber_dark</item>
+
+        <item name="android:colorBackground">@color/licorice</item>
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+
+        <item name="toolbarStyle">@style/Widget.App.Toolbar.Theme</item>
+
+        <item name="fontFamily">@font/inter</item>
+
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
+
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+
     </style>
 </resources>

@@ -1,15 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/common_dimen_normal">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:shapeAppearanceOverlay="@style/s"
+        android:id="@+id/bookPreview"
+        android:layout_width="70dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"
+        tools:src="@drawable/book_preview" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_dimen_normal"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/Widget.App.TextAppearance.TitleMedium"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/bookAuthor"
+        app:layout_constraintEnd_toStartOf="@id/imageFavourite"
+        app:layout_constraintStart_toEndOf="@id/bookPreview"
+        app:layout_constraintTop_toTopOf="@id/bookPreview"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Название книги" />
+
+    <ImageView
+        android:id="@+id/imageFavourite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/common_dimen_normal"
+        android:contentDescription="@string/favourite_book"
+        android:src="@drawable/star_ic"
+        app:layout_constraintBottom_toBottomOf="@id/bookTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bookTitle"
+        app:layout_constraintTop_toTopOf="@id/bookTitle"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textAppearance="@style/Widget.App.TextAppearance.SubtitleLarge"
+        android:textSize="@dimen/common_small_text_size"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/bookTitle"
+        app:layout_constraintStart_toStartOf="@id/bookTitle"
+        app:layout_constraintTop_toBottomOf="@id/bookTitle"
+        tools:text="Имя автора" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

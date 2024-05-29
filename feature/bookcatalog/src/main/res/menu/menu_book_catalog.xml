@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/menu_search"
-        android:icon="@drawable/baseline_search_24"
-        android:title="@string/search"
+        android:id="@+id/menu_search_button"
+        android:icon="@drawable/search_ic"
         app:iconTint="?attr/colorOnSurfaceVariant"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        tools:ignore="MenuTitle" />
 </menu>

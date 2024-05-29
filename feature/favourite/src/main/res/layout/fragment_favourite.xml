@@ -9,21 +9,23 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tbFavourite"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/favourite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBooksShortcuts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/favourite"
-        app:titleTextAppearance="@style/TextAppearance.Material3.ActionBar.Title" />
+        app:layout_constraintTop_toBottomOf="@id/tbFavourite"
+        tools:listitem="@layout/item_book_shortcut" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LOL"
-        android:textSize="40sp"
-        app:layout_constraintTop_toBottomOf="@id/tbFavourite" />
+    <include layout="@layout/error_state" />
 
+    <include layout="@layout/loading_state" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

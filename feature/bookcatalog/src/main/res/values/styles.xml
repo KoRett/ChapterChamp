@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeSearchView" parent="TextAppearance.Material3.SearchView">
+        <item name="android:editTextColor">?attr/colorPrimary</item>
+    </style>
+</resources>

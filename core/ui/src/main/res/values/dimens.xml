@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_dimen_small">5dp</dimen>
+    <dimen name="common_dimen_normal">10dp</dimen>
+    <dimen name="common_dimen_big">20dp</dimen>
+    <dimen name="common_dimen_large">30dp</dimen>
+
+    <dimen name="common_drawable_padding">10dp</dimen>
+
+    <dimen name="common_stroke_width">0dp</dimen>
+
+    <dimen name="common_title_text_size">28sp</dimen>
+    <dimen name="common_subtitle_text_size">24sp</dimen>
+    <dimen name="common_normal_text_size">20sp</dimen>
+    <dimen name="common_small_text_size">16sp</dimen>
+</resources>

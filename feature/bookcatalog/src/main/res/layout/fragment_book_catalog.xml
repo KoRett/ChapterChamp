@@ -4,34 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookCatalogFragment">
+    tools:context=".catalog.BookCatalogFragment">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tb_catalog"
+        android:id="@+id/toolbarCatalog"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryDark"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="?android:attr/actionBarSize"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="@string/fragment_title"
-        app:titleTextAppearance="@style/TextAppearance.Material3.ActionBar.Title" />
+        app:title="@string/popular" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_home"
+        android:id="@+id/rvBooksShortcuts"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:clipToPadding="false"
-        android:paddingStart="10dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="10dp"
-        android:paddingBottom="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tb_catalog" />
+        app:layout_constraintTop_toBottomOf="@id/toolbarCatalog"
+        tools:listitem="@layout/item_book_shortcut" />
 
+    <include layout="@layout/error_state" />
+
+    <include layout="@layout/loading_state" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

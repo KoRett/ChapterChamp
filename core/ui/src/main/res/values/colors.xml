@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="transparent">#00000000</color>
+
+    <color name="liver">#68453B</color>
+    <color name="chamoisee">#A37C61</color>
+    <color name="sunset">#EFCC95</color>
+    <color name="beaver_light">#A68674</color>
+    <color name="wheat">#F5DFBB</color>
     <color name="white">#FFFFFF</color>
-    <color name="dutch_white">#F5DFBB</color>
-    <color name="peach_orange">#EFCC95</color>
-    <color name="cafe_au_lait">#A37C61</color>
-    <color name="deep_coffee">#68453B</color>
-    <color name="beaver">#A68674</color>
+
+    <color name="dark">#0C0C0C</color>
+    <color name="licorice">#231B18</color>
+    <color name="bistre">#3A2924</color>
+    <color name="umber_dark">#584437</color>
+    <color name="coyote">#7E6C51</color>
+    <color name="umber_light">#594940</color>
+    <color name="beaver_dark">#958770</color>
+
+    <color name="common_title_text_color">@color/liver</color>
+    <color name="common_subtitle_text_color">@color/chamoisee</color>
+    <color name="common_main_text_color">@color/beaver_light</color>
+    <color name="common_toolbar_title_color">@color/wheat</color>
+    <color name="common_toolbar_bg_color">@color/liver</color>
+
+    <color name="rating_bg_color">@color/beaver_light</color>
+    <color name="rating_text_color">@color/sunset</color>
+    <color name="star_color">@color/sunset</color>
 </resources>

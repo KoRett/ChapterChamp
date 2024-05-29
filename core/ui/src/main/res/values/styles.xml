@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Toolbar.Title" parent="TextAppearance.Material3.ActionBar.Title">
-        <item name="android:textStyle">bold</item>
+
+    <style name="Widget.App.Toolbar.Theme" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextColor">@color/common_toolbar_title_color</item>
+        <item name="android:background">@color/common_toolbar_bg_color</item>
     </style>
+
+    <style name="Widget.App.TextAppearance.TitleLarge" parent="@style/TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/common_title_text_color</item>
+        <item name="android:textSize">@dimen/common_title_text_size</item>
+    </style>
+
+    <style name="Widget.App.TextAppearance.TitleMedium" parent="@style/TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/common_title_text_color</item>
+        <item name="android:textSize">@dimen/common_subtitle_text_size</item>
+    </style>
+
+    <style name="Widget.App.TextAppearance.SubtitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/common_subtitle_text_color</item>
+        <item name="android:textSize">@dimen/common_subtitle_text_size</item>
+    </style>
+
 </resources>

@@ -1,6 +1,5 @@
 package com.korett.chapterchamp
 
-import com.korett.chapterchamp.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies

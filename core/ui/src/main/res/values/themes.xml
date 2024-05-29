@@ -1,18 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Base.Theme.ChapterChamp" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/dutch_white</item>
-        <item name="colorOnSecondary">@color/peach_orange</item>
-        <item name="colorOnSecondaryContainer">@color/peach_orange</item>
-        <item name="colorOnSurface">@color/dutch_white</item>
-        <item name="colorOnSurfaceVariant">@color/cafe_au_lait</item>
-        <item name="colorSurfaceContainer">@color/deep_coffee</item>
-        <item name="colorSecondaryContainer">@color/beaver</item>
-        <item name="colorSurface">@color/deep_coffee</item>
-        <item name="colorPrimaryDark">@color/deep_coffee</item>
+        <item name="colorPrimary">@color/wheat</item>
+        <item name="colorOnSecondary">@color/sunset</item>
+        <item name="colorOnSecondaryContainer">@color/sunset</item>
+        <item name="colorOnSurface">@color/wheat</item>
+        <item name="colorOnSurfaceVariant">@color/chamoisee</item>
+        <item name="colorSurfaceContainer">@color/liver</item>
+        <item name="colorSecondaryContainer">@color/beaver_light</item>
+        <item name="colorSurface">@color/liver</item>
+        <item name="colorPrimaryDark">@color/liver</item>
+
+        <item name="android:textColorPrimary">@color/chamoisee</item>
+        <item name="android:textColorSecondary">@color/chamoisee</item>
+        <item name="actionMenuTextColor">@color/chamoisee</item>
 
         <item name="android:colorBackground">@color/white</item>
         <item name="android:windowBackground">?android:attr/colorBackground</item>
+
+        <item name="toolbarStyle">@style/Widget.App.Toolbar.Theme</item>
+
+        <item name="fontFamily">@font/inter</item>
+
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
+
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
 
     </style>
 

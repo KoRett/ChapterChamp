@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_catalog_nav_graph"
+    app:startDestination="@id/bookCatalogFragment">
+
+    <fragment
+        android:id="@+id/bookCatalogFragment"
+        android:name="com.korett.bookcatalog.catalog.BookCatalogFragment"
+        android:label="fragment_book_catalog"
+        tools:layout="@layout/fragment_book_catalog">
+        <action
+            android:id="@+id/action_bookCatalogFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_bookCatalogFragment_to_book_description_nav_graph"
+            app:destination="@id/book_description_nav_graph">
+            <argument
+                android:name="bookId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.korett.bookcatalog.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_book_description_nav_graph"
+            app:destination="@id/book_description_nav_graph" >
+            <argument
+                android:name="bookId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <include app:graph="@navigation/book_description_nav_graph" />
+
+</navigation>

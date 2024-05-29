@@ -4,6 +4,10 @@ plugins {
 
 android {
     namespace = "com.korett.core.ui"
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -13,6 +17,14 @@ dependencies {
     api(libs.constraintlayout)
     api(libs.androidx.navigation.fragment.ktx)
     api(libs.androidx.navigation.ui.ktx)
+
+    api(libs.glide)
+    api(libs.glide.ksp)
+
+    api(libs.bundles.bindingDelegate)
+
+    api(project(":core:data"))
+    implementation(project(":core:model"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

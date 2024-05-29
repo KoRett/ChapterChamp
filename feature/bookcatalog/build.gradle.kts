@@ -3,10 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.korett.booklist"
+    namespace = "com.korett.bookcatalog"
 }
 
 dependencies {
+    api(project(":core:data"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

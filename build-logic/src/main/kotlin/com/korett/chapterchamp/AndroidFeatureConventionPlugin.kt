@@ -13,6 +13,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             with(pluginManager) {
                 apply("chapterchamp.android.library")
                 apply("chapterchamp.android.dagger")
+                apply("androidx.navigation.safeargs.kotlin")
             }
 
             extensions.configure<LibraryExtension> {

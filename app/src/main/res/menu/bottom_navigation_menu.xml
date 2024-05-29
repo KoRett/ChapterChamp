@@ -4,13 +4,19 @@
     <item
         android:id="@id/book_catalog_nav_graph"
         android:enabled="true"
-        android:icon="@drawable/baseline_library_books_24"
+        android:icon="@drawable/library_books_ic"
         android:title="@string/catalog"/>
 
     <item
         android:id="@id/favourite_nav_graph"
         android:enabled="true"
-        android:icon="@drawable/baseline_bookmarks_24"
+        android:icon="@drawable/bookmarks_ic"
         android:title="@string/favourite"/>
+
+    <item
+        android:id="@id/settings_nav_graph"
+        android:enabled="true"
+        android:icon="@drawable/settings_ic"
+        android:title="@string/settings"/>
 
 </menu>

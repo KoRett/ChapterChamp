@@ -1,7 +1,6 @@
 package com.korett.chapterchamp
 
 import com.android.build.gradle.LibraryExtension
-import com.korett.chapterchamp.libs
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -20,13 +19,13 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
             }
 
             extensions.configure<LibraryExtension> {
+                compileSdk = 34
+
                 defaultConfig {
                     minSdk = 26
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                     consumerProguardFiles("consumer-rules.pro")
                 }
-
-                compileSdk = 34
 
                 buildTypes {
                     release {
@@ -51,6 +50,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
                 dependencies {
                     "implementation"(libs.findLibrary("coroutines.core").get())
+                    "implementation"(libs.findLibrary("coroutines.android").get())
                 }
             }
         }
