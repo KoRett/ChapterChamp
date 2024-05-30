@@ -2,5 +2,6 @@
     <string name="popular">Популярные</string>
     <string name="search">Поиск</string>
     <string name="empty_input_something_in_search_field">Пусто, введите что-нибудь в строку поиска.</string>
+    <string name="input_book_name">Введите название книги</string>
     <string name="nothing_not_found_dot">Ничего не найдено.</string>
 </resources>

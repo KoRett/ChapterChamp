@@ -66,13 +66,15 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
         binding.tbSearch.setupWithNavController(findNavController())
 
+        binding.bookSearch.queryHint = getString(R.string.input_book_name)
+
         binding.bookSearch.findViewById<ImageView>(androidx.appcompat.R.id.search_close_btn)
             .setOnClickListener {
                 if (binding.bookSearch.query.isEmpty()) {
-                    binding.bookSearch.isIconified = true;
+                    binding.bookSearch.isIconified = true
                 } else {
                     hideKeyboard()
-                    binding.bookSearch.setQuery("", false);
+                    binding.bookSearch.setQuery("", false)
                 }
             }
 
