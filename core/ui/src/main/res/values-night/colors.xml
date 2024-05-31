@@ -2,7 +2,7 @@
 <resources>
     <color name="common_title_text_color">@color/bistre</color>
     <color name="common_subtitle_text_color">@color/umber_dark</color>
-    <color name="common_main_text_color">@color/umber_light</color>
+    <color name="common_main_text_color">@color/beaver_dark</color>
     <color name="common_toolbar_title_color">@color/beaver_dark</color>
     <color name="common_toolbar_bg_color">@color/bistre</color>
 

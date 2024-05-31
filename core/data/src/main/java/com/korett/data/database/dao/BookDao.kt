@@ -21,5 +21,4 @@ interface BookDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveBook(bookEntity: BookEntity)
-
 }

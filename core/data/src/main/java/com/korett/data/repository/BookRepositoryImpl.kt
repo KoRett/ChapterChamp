@@ -5,7 +5,7 @@ import com.korett.data.database.mapper.toBookDomain
 import com.korett.data.database.mapper.toBookEntity
 import com.korett.model.BookModel
 import com.korett.network.mapper.toBookDomain
-import com.korett.network.retrofit.ChapterChampStorage
+import com.korett.network.retrofit.ChapterChampSource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -16,7 +16,7 @@ import javax.inject.Singleton
 
 @Singleton
 class BookRepositoryImpl @Inject constructor(
-    private val chapterChampStorage: ChapterChampStorage,
+    private val chapterChampSource: ChapterChampSource,
     private val bookDao: BookDao
 ) : com.korett.domain.repository.BookRepository {
 
@@ -28,7 +28,7 @@ class BookRepositoryImpl @Inject constructor(
                 emit(books)
             }
 
-            books = chapterChampStorage.getPopularBooks().map { it.toBookDomain() }
+            books = chapterChampSource.getPopularBooks().map { it.toBookDomain() }
             emit(books)
 
             val localBooks = bookDao.getAllBooks()
@@ -49,7 +49,7 @@ class BookRepositoryImpl @Inject constructor(
         bookDao.updateBookIsFavouriteById(bookId, isFavourite)
 
     override fun getPopularBookById(id: Int) =
-        flow { emit(chapterChampStorage.getPopularBookById(id)) }
+        flow { emit(chapterChampSource.getPopularBookById(id)) }
             .map { book ->
                 BookModel(
                     id = book.id,

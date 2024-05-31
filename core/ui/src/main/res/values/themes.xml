@@ -1,7 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
+<resources>
     <style name="Base.Theme.ChapterChamp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/wheat</item>
+        <item name="colorOnPrimary">@color/white</item>
         <item name="colorOnSecondary">@color/sunset</item>
         <item name="colorOnSecondaryContainer">@color/sunset</item>
         <item name="colorOnSurface">@color/wheat</item>
@@ -30,5 +30,4 @@
     </style>
 
     <style name="Theme.ChapterChamp" parent="Base.Theme.ChapterChamp" />
-
 </resources>

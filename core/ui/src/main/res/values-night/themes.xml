@@ -1,7 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-
+<resources>
     <style name="Base.Theme.ChapterChamp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/beaver_dark</item>
+        <item name="colorOnPrimary">@color/beaver_dark</item>
         <item name="colorOnSecondary">@color/coyote</item>
         <item name="colorOnSecondaryContainer">@color/coyote</item>
         <item name="colorOnSurface">@color/beaver_dark</item>

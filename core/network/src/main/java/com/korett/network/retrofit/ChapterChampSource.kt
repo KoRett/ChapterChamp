@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface ChapterChampStorage {
+interface ChapterChampSource {
 
     @GET("popular-books")
     suspend fun getPopularBooks(): List<BookNetwork>
@@ -17,8 +17,7 @@ interface ChapterChampStorage {
     suspend fun getPopularBookById(@Query("id") id: Int): BookNetwork
 
     companion object {
-
-        fun create(): ChapterChampStorage {
+        fun create(): ChapterChampSource {
             val clientBuilder = OkHttpClient.Builder()
 
             val interceptor = HttpLoggingInterceptor()
@@ -29,9 +28,7 @@ interface ChapterChampStorage {
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(clientBuilder.build())
                 .build()
-            return retrofit.create(ChapterChampStorage::class.java)
+            return retrofit.create(ChapterChampSource::class.java)
         }
-
     }
-
 }

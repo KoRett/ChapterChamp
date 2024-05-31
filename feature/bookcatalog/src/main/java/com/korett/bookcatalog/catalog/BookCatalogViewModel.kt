@@ -32,8 +32,7 @@ class BookCatalogViewModel(private val bookRepository: BookRepository) : ViewMod
     init {
         getPopularBookShortcuts()
     }
-
-
+    
     fun getPopularBookShortcuts() {
         bookJob?.cancel()
         bookJob = bookRepository.getPopularBooks()

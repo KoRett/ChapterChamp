@@ -1,5 +1,5 @@
 <resources>
-    <string name="about_book">О книги</string>
+    <string name="about_book">О книге</string>
     <string name="book_illustration">Иллюстрация книги</string>
     <string name="genres">Жанры:</string>
     <string name="rating">Рейтинг</string>

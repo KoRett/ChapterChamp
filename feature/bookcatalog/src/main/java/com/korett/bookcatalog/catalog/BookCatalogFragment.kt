@@ -15,7 +15,6 @@ import com.korett.bookcatalog.di.BookCatalogSubcomponentProvider
 import com.korett.bookcatalog.navigation.BookCatalogNavigation
 import com.korett.core.ui.databinding.ErrorStateBinding
 import com.korett.core.ui.databinding.LoadingStateBinding
-import com.korett.model.BookModel
 import com.korett.ui.BookShortcutAdapter
 import com.korett.ui.model.BookModelUi
 import com.korett.ui.utils.LceState
@@ -110,10 +109,8 @@ class BookCatalogFragment : Fragment(R.layout.fragment_book_catalog) {
         }
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
         adapter = null
     }
-
 }
